@@ -229,3 +229,109 @@ PS> dotnet new -u <Project Folder Path>\Matech.Sample.Template
 ```
 
 ## Configure Nuget Deployment
+
+First you need to create an account on [nuget.org](https://www.nuget.org/) like my profile [ilkerayti](https://www.nuget.org/profiles/ilkerayti). 
+
+### Download Nuget.exe and add to Path
+
+Actualy you don't need to add path Nuget.exe but it is very usefull usage. [Download Nuget](https://www.nuget.org/downloads) latest version. Windows 10 search: Edit the system environment variables.
+
+![System_Environment](System_Environment.jpg "Windows 10 System Environment")
+
+Go to Environment Variables
+
+![System_Environment](System_Environment_Properties.jpg "Windows 10 System Environment Properties")
+
+Go to System variables Path with double click.
+
+![Path](Path.jpg "Windows 10 Path")
+
+Add New nuget.ex file location in your system.
+
+![Path New](Path_New.jpg "Windows 10 Path New")
+
+### Configure .nuspec file
+
+Open terminal in your Matech.Sample.Template project folder
+
+```powershell
+PS Matech.Sample.Template> nuget spec
+```
+
+Package.nuspec file must be create in your porject folder.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Matech.Sample.Template</id>
+    <version>1.0.0</version>
+    <authors>ilker Ayti</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/iayti/Matech.Sample.Template</projectUrl>
+    <repository type="git" url="https://github.com/iayti/Matech.Sample.Template" branch="master" />
+    <description>Matech Sample Template for Web Api and .NET Core 3.1.</description>
+    <copyright>$copyright$</copyright>
+    <tags>dotnet-core webapi csharp template</tags>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+  <files>
+    <file src="**" exclude="**\bin\**\*;**\obj\**\*;**\*.user;**\*.lock.json;**\.DS_Store;**\.git\**\*;**\.github\**\*;**\.vs\**\*;**\*LICENSE;**\*.gitattributes;**\*README.md;**\*.gitignore;**\*nuget.config;" target="/content" />
+  </files>
+</package>
+```
+
+After the configuration, we finally create .nupkd file for nuget.org upload or push.
+
+```powershell
+PS Matech.Sample.Template> nuget pack Package.nuspec -NoDefaultExcludes
+```
+
+If you don't add nuget.ex to Environment System Variable Path just use the nuget.exe
+
+```powershell
+PS Matech.Sample.Template> C:\Nuget\nuget.exe pack Package.nuspec -NoDefaultExcludes
+```
+
+Package was created.
+
+![Package](Package.jpg "Nuget Package")
+
+[Nuget Package Explorer](https://www.microsoft.com/en-us/p/nuget-package-explorer/9wzdncrdmdm3) is very usefull tool for checking .nupkd file before publish.
+
+![Nuget_Package_Explorer](Nuget_Package_Explorer.jpg "Nuget Package Explorer")
+
+Finaly we can upload to packages to Nuget servers :smile:
+
+Upload Package
+
+![Upload_Package](Upload_Package.jpg "Upload Package")
+
+![Upload_Package_Details](Upload_Package_Details.jpg "Upload Package Details")
+
+![Package_Info](Package_Info.jpg "Package Info")
+
+Check [Matech.Sample.Template](https://www.nuget.org/packages/Matech.Sample.Template)
+
+## Sample Template Usage
+
+Open terminal in your repos folder.
+
+```powershell
+PS> mkdir Your.Template.Name
+PS> cd Your.Template.Name
+```
+
+Template will use your folder name as project name
+
+```powershell
+PS Your.Template.Name> dotnet new --install Matech.Sample.Template
+PS Your.Template.Name> dotnet new mst
+```
+
+
+
+
