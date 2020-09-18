@@ -205,7 +205,7 @@ Let's try our template locally.
 PS > dotnet new --install <Project Folder Path>\Matech.Sample.Template
 ```
 
-![Matech.Sample.Template Project](Dotnet_CLI_Local_TEmplate.jpg "Default Project")
+![Matech.Sample.Template Project](Dotnet_CLI_Local_Template.jpg "Default Project")
 
 Create new project using our local template.
 
