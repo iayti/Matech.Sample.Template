@@ -45,7 +45,7 @@ You can check [dotnet sln](https://docs.microsoft.com/tr-tr/dotnet/core/tools/do
 
 Let's go to the folder where we created our project and add new classes to our project.
 
-`Domain` will contain all entities, enums, exceptions, interfaces, types and logic specific to the domain layer. If you interested in Clean Architecture, you can check my public open source [solution template for creating a ASP.NET Core Web Api following the principles of Clean Architecture](https://github.com/iayti/CleanArchitecture).
+`Domain` will contain all entities, enums, exceptions, interfaces, types and logic specific to the domain layer. If you are interested in Clean Architecture, you can check my public open source [solution template for creating a ASP.NET Core Web Api following the principles of Clean Architecture](https://github.com/iayti/CleanArchitecture).
 
 ```csharp
 namespace Domain.Entities
@@ -106,7 +106,7 @@ namespace Infrastructure
 }
 ```
 
-### Prerequest for Database Migrations
+### Prerequisites for Database Migrations
 * If you don't have [Entity Framework Core tools reference - .NET Core CLI](https://docs.microsoft.com/tr-tr/ef/core/miscellaneous/cli/dotnet), Install
 
 ```powershell
@@ -207,7 +207,7 @@ PS > dotnet new --install <Project Folder Path>\Matech.Sample.Template
 
 ![Matech.Sample.Template Project](Dotnet_CLI_Local_Template.jpg "Default Project")
 
-Create new project using our local template.
+Create a new project using our local template.
 
 ```powershell
 PS> mkdir Test_Local_Sample_Template
@@ -234,7 +234,7 @@ First you need to create an account on [nuget.org](https://www.nuget.org/) like 
 
 ### Download Nuget.exe and add to Path
 
-Actualy you don't need to add path Nuget.exe but it is very usefull usage. [Download Nuget](https://www.nuget.org/downloads) latest version. Windows 10 search: Edit the system environment variables.
+Actually you don't need to add path Nuget.exe but it is a very useful usage. [Download Nuget's latest version.](https://www.nuget.org/downloads) Windows 10 search: Edit the system environment variables.
 
 ![System_Environment](System_Environment.jpg "Windows 10 System Environment")
 
@@ -258,7 +258,7 @@ Open terminal in your Matech.Sample.Template project folder
 PS Matech.Sample.Template> nuget spec
 ```
 
-Package.nuspec file must be create in your porject folder.
+Package.nuspec file must be created in your project folder.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -284,7 +284,7 @@ Package.nuspec file must be create in your porject folder.
 </package>
 ```
 
-After the configuration, we finally create .nupkd file for nuget.org upload or push.
+After the configuration, we finally created a .nupkd file for nuget.org upload or push.
 
 ```powershell
 PS Matech.Sample.Template> nuget pack Package.nuspec -NoDefaultExcludes
@@ -300,11 +300,11 @@ Package was created.
 
 ![Package](Package.jpg "Nuget Package")
 
-[Nuget Package Explorer](https://www.microsoft.com/en-us/p/nuget-package-explorer/9wzdncrdmdm3) is very usefull tool for checking .nupkd file before publish.
+[Nuget Package Explorer](https://www.microsoft.com/en-us/p/nuget-package-explorer/9wzdncrdmdm3) is very useful tool for checking .nupkd file before publish.
 
 ![Nuget_Package_Explorer](Nuget_Package_Explorer.jpg "Nuget Package Explorer")
 
-Finaly we can upload to packages to Nuget servers :smile:
+Finally we can upload to packages to Nuget servers :smile:
 
 Upload Package
 
