@@ -2,15 +2,15 @@
   "$schema": "http://json.schemastore.org/template",
   "author": "ilker Ayti",
   "classifications": [], // Web/MVC/WebApi
-  "name": "Matech Sample Template",
+  "name": "Sample Template",
   "identity": "Matech.Sample.Template", // Unique identity for Nuget
-  "groupIdentity": "Matech.Sample.Template",
+  "groupIdentity": "Sample.Template",
   "shortName": "mst", // short name for dotnet new mat creating new project using this template
   "tags": {
     "language": "C#",
     "type": "project"
   },
-  "sourceName": "MatechSample",
+  "sourceName": "SampleTemplate",
   "preferNameDirectory": true,
   "sources": [
     {
