@@ -139,7 +139,7 @@ Sample template project is finally ready :smile:
 
 ![Matech.Sample.Template Project](Project_Final.jpg "Default Project")
 
-### Adding Template Config and testing locally.
+### Adding .template.config and testing locally.
 
 The example below demonstrates the file and folder structure of using a template.json to create a template pack. Check the [microsoft docs](https://docs.microsoft.com/en-us/dotnet/core/tools/custom-templates).
 
