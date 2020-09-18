@@ -332,6 +332,14 @@ PS Your.Template.Name> dotnet new --install Matech.Sample.Template
 PS Your.Template.Name> dotnet new mst
 ```
 
+## Support
+
+If you are having problems, please let us know by [raising a new issue](https://github.com/iayti/MatechSampleTemplate/issues/new/choose).
+
+## License
+
+This project is licensed with the [MIT license](LICENSE).
+
 
 
 
