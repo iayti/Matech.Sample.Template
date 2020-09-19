@@ -246,7 +246,7 @@ Go to System variables Path with double click.
 
 ![Path](Path.jpg "Windows 10 Path")
 
-Add New nuget.ex file location in your system.
+Add New nuget.exe file location in your system.
 
 ![Path New](Path_New.jpg "Windows 10 Path New")
 
@@ -290,7 +290,7 @@ After the configuration, we finally created a .nupkd file for nuget.org upload o
 PS Matech.Sample.Template> nuget pack Package.nuspec -NoDefaultExcludes
 ```
 
-If you don't add nuget.ex to Environment System Variable Path just use the nuget.exe
+If you don't add nuget.exe to Environment System Variable Path just use the nuget.exe
 
 ```powershell
 PS Matech.Sample.Template> C:\Nuget\nuget.exe pack Package.nuspec -NoDefaultExcludes
