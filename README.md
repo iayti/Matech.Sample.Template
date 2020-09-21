@@ -334,7 +334,7 @@ PS Your.Template.Name> dotnet new mst
 
 ## Support
 
-If you are having problems, please let us know by [raising a new issue](https://github.com/iayti/MatechSampleTemplate/issues/new/choose).
+If you are having problems, please let us know by [raising a new issue](https://github.com/iayti/Matech.Sample.Template/issues/new/choose).
 
 ## License
 
