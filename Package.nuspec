@@ -2,13 +2,13 @@
 <package >
   <metadata>
     <id>Matech.Sample.Template</id>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <authors>ilker Ayti</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/iayti/Matech.Sample.Template</projectUrl>
     <repository type="git" url="https://github.com/iayti/Matech.Sample.Template" branch="master" />
-    <description>Matech Sample Template for Web Api and .NET5.</description>
+    <description>Matech Sample Template for Web Api and .NET6.</description>
     <copyright>$copyright$</copyright>
     <tags>dotnet-core webapi csharp template</tags>
     <packageTypes>
